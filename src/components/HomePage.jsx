@@ -2,7 +2,9 @@
 function HomePage() {
     return(
         <>
-        <h1>Homepage</h1>
+        <main className="ms-bg-home ">
+            <h1 className="text-center text-white p-5">Benvenuto nel mio Blog</h1>
+        </main>
         </>
     )
 }

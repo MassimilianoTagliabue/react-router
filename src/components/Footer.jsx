@@ -1,8 +1,9 @@
 function Footer(){
 
     return(
-        <footer>
-            <h3>Sono Footer File</h3>
+        <footer className="ms-bg-footer">
+            <h4 className="text-white p-2">Qui puoi trovare i nostri social</h4>
+
         </footer>
     )
 }
