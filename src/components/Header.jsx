@@ -21,7 +21,7 @@ function Header() {
     return (
         <header>
 
-            <nav className="navbar bg-dark border-bottom border-body " data-bs-theme="dark">
+            <nav className="navbar bg-dark border-bottom border-body px-3" data-bs-theme="dark">
                 <ul className="nav nav-tabs">
                     {menu.map((curPage) =>
                         <li key={curPage.title} li className="nav-item">
@@ -30,10 +30,6 @@ function Header() {
                     )}
                 </ul>
             </nav>
-
-
-
-
 
         </header>
     )

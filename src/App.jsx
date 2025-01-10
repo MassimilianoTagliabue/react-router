@@ -1,8 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import AppLayout from "./components/AppLayout"
-import About from "./components/About"
 import HomePage from "./components/Homepage"
-import AppPostList from "./components/AppPostList"
+import AppPostList from "./pages/AppPostList"
+import About from "./pages/About"
+import CreatePost from "./pages/admin/CreatePost"
 
 function App() {
 
@@ -10,9 +11,12 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<AppLayout />}>
-          <Route path="/" element={<HomePage/>}/>
+          <Route index element={<HomePage/>}/>
           <Route path="/about" element={<About/>}/>
-          <Route path="/postList" element={<AppPostList/>}/>
+          <Route path="/postList">
+            <Route index element={<AppPostList/>}/>
+            <Route path="/postList/create" element={<CreatePost/>}/>
+          </Route>
         </Route>
       </Routes>
     </BrowserRouter>
