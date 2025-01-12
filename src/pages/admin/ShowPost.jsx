@@ -21,9 +21,9 @@ function ShowPost() {
 
             })
             .catch((err) => {
-                // if (err.status === 404) {
-                //     navigate("/not-found");
-                //   }
+                 if (err.status === 404) {
+                     navigate("/not-found");
+                  }
             })
             .finally(() => {
                 setLoading(false);

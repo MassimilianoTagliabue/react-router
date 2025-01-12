@@ -5,6 +5,7 @@ import AppPostList from "./pages/AppPostList"
 import About from "./pages/About"
 import CreatePost from "./pages/admin/CreatePost"
 import ShowPost from "./pages/admin/ShowPost"
+import NotFoundPage from "./pages/NotFoundPage"
 
 function App() {
 
@@ -19,7 +20,8 @@ function App() {
             <Route path="create" element={<CreatePost/>}/>
             <Route path=":id" element={<ShowPost/>}/>
           </Route>
-        </Route>
+          <Route path="*" element={<NotFoundPage/>}/>
+          </Route>
       </Routes>
     </BrowserRouter>
   )
