@@ -4,6 +4,7 @@ import HomePage from "./components/Homepage"
 import AppPostList from "./pages/AppPostList"
 import About from "./pages/About"
 import CreatePost from "./pages/admin/CreatePost"
+import ShowPost from "./pages/admin/ShowPost"
 
 function App() {
 
@@ -15,7 +16,8 @@ function App() {
           <Route path="/about" element={<About/>}/>
           <Route path="/postList">
             <Route index element={<AppPostList/>}/>
-            <Route path="/postList/create" element={<CreatePost/>}/>
+            <Route path="create" element={<CreatePost/>}/>
+            <Route path=":id" element={<ShowPost/>}/>
           </Route>
         </Route>
       </Routes>

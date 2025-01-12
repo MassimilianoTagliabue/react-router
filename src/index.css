@@ -31,3 +31,7 @@
     background-color: black;
     height: 12vh;
 }
+
+.ms-details img{
+    margin-left: 30%;
+}
